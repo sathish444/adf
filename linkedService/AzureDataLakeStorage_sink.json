@@ -12,8 +12,7 @@
 					"referenceName": "AzureKeyVault",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "sink-gen2",
-				"secretVersion": "2dc34b564bf04cc3b591b33851391325"
+				"secretName": "sink"
 			}
 		}
 	}
