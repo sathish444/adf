@@ -1,20 +1,19 @@
 {
 	"name": "AzureDataLakeStorage_sink",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "AzureBlobFS",
 		"typeProperties": {
-			"sasUri": "https://prdgen2storage1.dfs.core.windows.net/",
-			"sasToken": {
+			"url": "https://prdgen2storage1.dfs.core.windows.net/",
+			"accountKey": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
 					"referenceName": "AzureKeyVault",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "sink",
-				"secretVersion": "dca2e559b39e4cedbd5116b4e603d330"
+				"secretName": "sink"
 			}
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
