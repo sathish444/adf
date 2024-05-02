@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "devadfproject1"
 		},
+		"AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://devkeyvalue.vault.azure.net/"
+		},
 		"containerUri": {
 			"value": ""
 		},
