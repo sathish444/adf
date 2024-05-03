@@ -33,6 +33,8 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
+							"wildcardFolderPath": "adfsource",
+							"wildcardFileName": "*.tsv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
