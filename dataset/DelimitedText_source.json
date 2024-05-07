@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"folderPath": "adfsource",
 				"fileSystem": "source"
 			},
 			"columnDelimiter": ",",
