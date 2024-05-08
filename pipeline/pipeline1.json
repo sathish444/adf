@@ -16,30 +16,9 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "DelimitedTextSource",
-						"additionalColumns": [
-							{
-								"name": "loadtime",
-								"value": {
-									"value": "@utcnow()",
-									"type": "Expression"
-								}
-							},
-							{
-								"name": "filepath",
-								"value": "$$FILEPATH"
-							}
-						],
-						"storeSettings": {
-							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"wildcardFolderPath": "adfsource",
-							"wildcardFileName": "*.csv",
-							"enablePartitionDiscovery": false
-						},
-						"formatSettings": {
-							"type": "DelimitedTextReadSettings"
-						}
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
 					},
 					"sink": {
 						"type": "DelimitedTextSink",
@@ -65,7 +44,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText_source",
+						"referenceName": "AzureSqlTable1",
 						"type": "DatasetReference"
 					}
 				],
