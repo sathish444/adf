@@ -46,18 +46,18 @@
 								},
 								"sink": {
 									"name": "id",
-									"type": "Int32",
-									"physicalType": "int"
+									"type": "String",
+									"physicalType": "nvarchar"
 								}
 							},
 							{
 								"source": {
-									"name": "id",
+									"name": "name",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "id1"
+									"name": "name"
 								}
 							}
 						],
