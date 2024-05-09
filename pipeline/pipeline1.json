@@ -21,7 +21,7 @@
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
 							"modifiedDatetimeStart": {
-								"value": "@convertToUtc(formatDateTime('yyyy-MM-dd HH:mm:ss'),'indian ')",
+								"value": "@startOfDay(utcnow())",
 								"type": "Expression"
 							},
 							"enablePartitionDiscovery": false
