@@ -7,6 +7,34 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "devadfproject1"
 		},
+		"AzureDataLakeStorage_source_servicePrincipalCredential": {
+			"type": "secureString",
+			"metadata": "Secure string for 'servicePrincipalCredential' of 'AzureDataLakeStorage_source'"
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1'"
+		},
+		"SqlServer1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'SqlServer1'"
+		},
+		"AzureDataLakeStorage_sink_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://prdgen2storage1.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage_source_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://devgen2storage1.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage_source_properties_typeProperties_tenant": {
+			"type": "string",
+			"defaultValue": "a26ade79-3a13-405b-bda8-53bb2a440eaf"
+		},
+		"AzureDataLakeStorage_source_properties_typeProperties_servicePrincipalId": {
+			"type": "string",
+			"defaultValue": "39e59a7e-aabe-4953-8c7d-a0b2e58b945f"
+		},
 		"AzureKeyVault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://devkeyvalue.vault.azure.net/"
@@ -38,8 +66,29 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"AzureDataLakeStorage_source_servicePrincipalCredential": {
+						"value": "[parameters('AzureDataLakeStorage_source_servicePrincipalCredential')]"
+					},
+					"AzureSqlDatabase1_connectionString": {
+						"value": "[parameters('AzureSqlDatabase1_connectionString')]"
+					},
+					"SqlServer1_connectionString": {
+						"value": "[parameters('SqlServer1_connectionString')]"
+					},
+					"AzureDataLakeStorage_source_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage_source_properties_typeProperties_url')]"
+					},
+					"AzureDataLakeStorage_source_properties_typeProperties_tenant": {
+						"value": "[parameters('AzureDataLakeStorage_source_properties_typeProperties_tenant')]"
+					},
+					"AzureDataLakeStorage_source_properties_typeProperties_servicePrincipalId": {
+						"value": "[parameters('AzureDataLakeStorage_source_properties_typeProperties_servicePrincipalId')]"
+					},
 					"AzureKeyVault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault_properties_typeProperties_baseUrl')]"
+					},
+					"AzureDataLakeStorage_sink_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage_sink_properties_typeProperties_url')]"
 					}
 				}
 			},

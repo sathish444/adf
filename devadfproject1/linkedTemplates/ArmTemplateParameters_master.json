@@ -5,6 +5,27 @@
 		"factoryName": {
 			"value": "devadfproject1"
 		},
+		"AzureDataLakeStorage_source_servicePrincipalCredential": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"SqlServer1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage_sink_properties_typeProperties_url": {
+			"value": "https://prdgen2storage1.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage_source_properties_typeProperties_url": {
+			"value": "https://devgen2storage1.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage_source_properties_typeProperties_tenant": {
+			"value": "a26ade79-3a13-405b-bda8-53bb2a440eaf"
+		},
+		"AzureDataLakeStorage_source_properties_typeProperties_servicePrincipalId": {
+			"value": "39e59a7e-aabe-4953-8c7d-a0b2e58b945f"
+		},
 		"AzureKeyVault_properties_typeProperties_baseUrl": {
 			"value": "https://devkeyvalue.vault.azure.net/"
 		},
