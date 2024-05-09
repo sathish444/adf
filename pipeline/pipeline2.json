@@ -37,8 +37,38 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Lookup1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "output",
+					"value": {
+						"value": "@activity('Lookup1').output.count",
+						"type": "Expression"
+					}
+				}
 			}
 		],
+		"variables": {
+			"output": {
+				"type": "Integer",
+				"defaultValue": 0
+			}
+		},
 		"annotations": []
 	}
 }
