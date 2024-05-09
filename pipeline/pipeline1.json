@@ -20,6 +20,10 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
+							"modifiedDatetimeStart": {
+								"value": "@convertToUtc(formatDateTime('yyyy-MM-dd HH:mm:ss'),'indian ')",
+								"type": "Expression"
+							},
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -83,7 +87,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText_sink",
+						"referenceName": "DelimitedText_source",
 						"type": "DatasetReference"
 					}
 				],
